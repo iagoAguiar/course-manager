@@ -1,4 +1,4 @@
-import { CouseService } from './courses.service';
+import { CourseService } from './courses.service';
 import { Component ,OnInit } from "@angular/core";
 import { Course } from "./course";
 import { createOfflineCompileUrlResolver } from '@angular/compiler';
@@ -13,7 +13,7 @@ export class CourseListComponent implements OnInit{
 
     _filterBy!: string;
     
-    constructor( private coursesService:  CouseService){}
+    constructor( private coursesService:  CourseService){}
 
     ngOnInit(): void{
         this._courses = this.coursesService.retriveAll();

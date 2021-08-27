@@ -4,7 +4,6 @@ import { Course } from "./course";
 import { createOfflineCompileUrlResolver } from '@angular/compiler';
 
 @Component({
-    selector: 'app-course-list',
     templateUrl: './courses-list.component.html' 
 })
 export class CourseListComponent implements OnInit{
